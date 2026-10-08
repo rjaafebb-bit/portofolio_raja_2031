@@ -1,0 +1,226 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 25%;
+    flex-shrink: 0;
+    background-color:#ffe100;
+    padding: 35px 30px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:bold;
+    line-height: 2;
+}
+
+.sidebar a:hover {
+    color: #7d4c91;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    width: 75%;
+    background-color: #000000;
+    padding: 40px 45px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.content {
+    width: 75%;
+    background-color:#0F172A;
+    padding: 40px 45px;
+}
+
+.content .section h1 {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 0 0 22px 0;
+}
+
+.content .section p {
+    color: #ffffff !important;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+    padding: 0;
+    text-align: justify;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 18px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .banner {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    footer {
+        width: 90%;
+    }
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 480px) {
+
+    .banner {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
+    .content {
+        padding: 25px 20px;
+    }
+
+    .section h1 {
+        font-size: 23px;
+    }
+
+    .section p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    footer {
+        width: 95%;
+    }
+}
+/* CSS untuk Kotak Motivasi (Lebar 80% & Nempel Tanpa Jarak di Atasnya) */
+.kotak-motivasi {
+  width: 80%;                 /* Lebar kotak 80% */
+  margin: 0 auto;             /* 0 di atas/bawah menghilangkan jarak, auto mengetengahkan kotak */
+  background-color:#000102;  /* Warna latar belakang gelap */
+  color: #ffffff;             
+  text-align: center;        
+  padding: 25px 20px;        
+}
+
+.kotak-motivasi .kata-motivasi {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.kotak-motivasi .penulis {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
